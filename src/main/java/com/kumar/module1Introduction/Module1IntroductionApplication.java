@@ -30,8 +30,8 @@ public class Module1IntroductionApplication implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
 
-//    notificationService.send("bonjour!");
-//    smsNotificationService.send("bonjour");
+    // notificationService.send("bonjour!");
+    // smsNotificationService.send("bonjour");
 
     // forEach
     for (var notificationService : notificationServiceMap.entrySet()) {
