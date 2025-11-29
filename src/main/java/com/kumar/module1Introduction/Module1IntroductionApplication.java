@@ -9,7 +9,7 @@ public class Module1IntroductionApplication implements CommandLineRunner {
 
   // field Injection is not recommended -> so remove @Autowired
 //  @Autowired
-  NotificationService notificationService;
+  final NotificationService notificationService;
 
   // make the construction this class
   public Module1IntroductionApplication(NotificationService notificationService) {
