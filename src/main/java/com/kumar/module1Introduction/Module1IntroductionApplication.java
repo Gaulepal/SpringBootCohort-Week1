@@ -1,5 +1,6 @@
 package com.kumar.module1Introduction;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +13,7 @@ public class Module1IntroductionApplication implements CommandLineRunner {
   final NotificationService notificationService;
 
   // make the construction this class
-  public Module1IntroductionApplication(NotificationService notificationService) {
+  public Module1IntroductionApplication(@Qualifier("emailQualifier") NotificationService notificationService) {
     this.notificationService = notificationService;
   }
 
