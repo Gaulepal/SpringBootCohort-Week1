@@ -5,6 +5,6 @@ import com.kumar.module1Introduction.NotificationService;
 public class EmailNotificationService implements NotificationService {
   @Override
   public void send(String message) {
-    System.out.println("Sending email...");
+    System.out.println("Sending email..." + message);
   }
 }
